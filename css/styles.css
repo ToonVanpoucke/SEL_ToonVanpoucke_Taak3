@@ -1,0 +1,101 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th, td{
+    border: 2px solid black;
+    width: 7rem;
+    padding: 5px;
+}
+
+h1 abbr{
+    text-decoration: underline dashed black;
+}
+
+p a{
+    text-decoration: underline;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 150px 20px 1fr;
+  grid-template-areas:
+    'header header header'
+    'nav    main   main';
+}
+
+header{
+    grid-area: header;
+    text-align: center;
+    border: 5px solid black;
+    margin-bottom: -5px;
+}
+
+nav{
+    grid-area: nav;
+    border: 5px solid black;
+    font-size: 1.2em;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+main{
+    grid-area: main;
+    border: 5px solid black;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: grey;
+}
+
+thead {
+    font-weight: bold;
+    text-align: center;
+}
+
+/*h2+p{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+p+table{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}*/
+
+tbody tr:nth-child(odd) {
+    background: #ca4deb;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+tbody td:last-child()
+{
+    text-align: right;
+}
+
+button{
+    background-color: #3155ef;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border-style: hidden;
+    padding: 12px 32px;
+    transition-duration: 300ms;
+}
+
+button:hover{
+    transform: scale(1.2) rotate(20deg);
+}
+
+
